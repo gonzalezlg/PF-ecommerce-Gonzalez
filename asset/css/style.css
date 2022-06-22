@@ -1,0 +1,379 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); /*Para los subtitulos de las secciones*/
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oswald&display=swap'); /*Letra en general*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* ******* GRID CONTAINER MOBILE >576px para secciones Ofertas-Hombre-Mujer-Niños****** */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 100px 50px auto auto auto;
+    flex-wrap: wrap;
+
+    grid-template-areas: "header header header"
+                         "navbar navbar navbar"
+                         "imgPrincipal imgPrincipal imgPrincipal"
+                         "main main main"
+                         "footer footer footer";
+}
+
+/*Grid Área*/
+
+.header{
+    grid-area: header;
+    /* background-color: darkblue; */
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: black;
+    font-family: oswald;
+}
+
+.imgPrincipal{
+    grid-area: imgPrincipal;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+
+/*Header*/
+.logo img{ 
+    width: 50px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+}
+
+.header a:hover{
+    font-size: 20px;
+}
+
+.buscador{
+    margin: 35px;
+    padding: 5px   ;
+    width: 30%;
+    border-radius: 5px;
+}
+
+/*Navbar*/
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;    
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #37b611;
+    margin: 30px;
+}
+
+.navbar a:hover{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+/*Imagen Seccion*/
+
+.imgPrincipal{
+    display: flex;
+    justify-content: center;
+}
+
+.fotoPrincipal{
+    width: 100%; 
+    height: 100%;   
+}
+
+/*Main Secciones*/
+
+.tituloSeccion{
+    margin: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+.enlacesOfertas {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.enlacesOfertas a{
+    text-decoration: none;
+    margin: 0px 20px;
+    margin-bottom: 35px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.enlacesOfertas a:hover{
+    font-size: 23px;
+    color: #37b611;
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+
+/*Productos*/
+
+.seccionProductos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.tarjeta{
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    color: black;
+}
+
+.tarjeta:hover{
+    border: 3px solid black;
+    box-shadow: inset 0px 0px 40px rgb(196, 194, 194);
+    margin-bottom: 0px;
+}
+
+.productos{
+    width: 80%;
+}
+
+.btn{
+    margin: 15px 0;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    box-shadow: inset 0px 0px 40px rgb(196, 194, 194);
+    background-color: #37b611;
+    cursor: pointer;
+}
+
+/*Footer*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px 20px;
+}
+
+.linkFooter{
+    display: flex;
+    list-style: none;
+    margin: 20px 15px;
+}
+
+.linkFooter a {
+    color: #37b611;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover{
+    font-size: 1.5em;  
+}
+
+.footerIframe{
+    width: 100%;
+    height: 95%;
+    
+}
+
+div .footerIframe{
+    margin: 15px 0;
+}
+
+.redesFooter{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 25px;
+}
+
+.redesFooter h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.redesFooter a{
+    margin:0 5px ;
+}
+
+.redesFooter img:hover{
+    width: 25px;
+    height: 25px;
+}
+
+.telFooter{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* ******* GRID CONTAINER MOBILE >576px para CONTACTOS.HTML****** */
+
+.containerContacto{
+    display: grid;
+
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 100px 50px auto auto;
+    flex-wrap: wrap;
+
+    grid-template-areas: "header header header"
+                         "navbar navbar navbar"
+                         "formulario formulario formulario"
+                         "footer footer footer";
+}
+
+
+
+
+/*Grid Área*/
+
+.formulario{
+    grid-area: formulario;
+
+    margin: 0px auto;
+    line-height: 20px;
+    padding: 10px 100px;
+}
+
+
+.formRedes{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formRedes a{
+    color: black;
+    text-transform: uppercase;
+}
+
+.formContacto{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+
+.formContacto input{
+    margin-left: 10px;
+}
+
+.formContacto input:hover{
+    background-color: rgb(224, 223, 223);
+}
+
+.btn{
+    padding: 5px 20px;
+    background-color: #a9d637;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: #79913e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* ********* GRID CONTAINER MOBILE >= 768px ********** */
+
+@media (min-width:768px){
+
+    /*El grid es igual ya que no modifican las ubiucaciones de las partes del contenedor general*/
+    /*Lo unico que se modifica es la ubicacion de los prodcutos*/
+    /*y cuando utilicemnos boostrap voy a modificar el header y menu para la version mobile*/
+
+    .seccionProductos{
+        display: flex;
+        flex-direction: row;
+
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .tarjeta{
+        width: 42%;
+        margin-left: 38px;       
+    }
+
+}
+
+
+/* ********* GRID CONTAINER MOBILE >= 1200px ********** */
+
+@media (min-width:1200px){
+
+    /*El grid es igual ya que no modifican las ubiucaciones de las partes del contenedor general*/
+    /*Lo unico que se modifica es la ubicacion de los prodcutos*/
+    /*y cuando utilicemnos boostrap voy a modificar el header y menu para la version mobile*/
+    
+
+    .tarjeta{
+        width: 20%;
+        margin-left: 50px;       
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        padding: 10px 20px;
+    }
+
+    .linkFooter{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 15px;
+    }
+
+}
+
+/*Agrego este corte ya que el formulario de contacto se rompe cuando estsa por debajo de los 436px*/
+
+@media (max-width:436px){
+    .formulario{    
+        font-size: 10px;
+    }
+}
+
+
