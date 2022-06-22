@@ -34,6 +34,11 @@
     grid-area: navbar;
     background-color: black;
     font-family: oswald;
+
+    background: #080402;
+    background: -moz-linear-gradient(left, #080402 0%, #010203 50%, #305A21 100%);
+    background: -webkit-linear-gradient(left, #080402 0%, #010203 50%, #305A21 100%);
+    background: linear-gradient(to right, #080402 0%, #010203 50%, #305A21 100%);
 }
 
 .imgPrincipal{
@@ -53,6 +58,20 @@
 /*Header*/
 .logo img{ 
     width: 50px;
+
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
+/*Se agrega esta animacion sobre el logo, al iniciar al pagina aparece el logo*/
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .header{
@@ -191,6 +210,11 @@
     align-items: center;
 
     padding: 10px 20px;
+
+    background: #080402;
+    background: -moz-linear-gradient(left, #080402 0%, #010203 50%, #305A21 100%);
+    background: -webkit-linear-gradient(left, #080402 0%, #010203 50%, #305A21 100%);
+    background: linear-gradient(to right, #080402 0%, #010203 50%, #305A21 100%);
 }
 
 .linkFooter{

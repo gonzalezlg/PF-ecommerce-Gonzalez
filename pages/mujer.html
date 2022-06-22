@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mujer</title>
 
+    <!--libreria para animaciones - AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--FAVICON-->
     <link  rel="icon"   href="../asset/img/logo.jpg" type="image/png" />
 
@@ -43,7 +46,7 @@
         <!-- IMAGEN PRINCIPAL DE CADA SECCION-->
         <section class="imgPrincipal">
             <div>
-                <img class="fotoPrincipal" src="../asset/img/imagenMujer.webp" alt="">
+                <img class="fotoPrincipal" src="../asset/img/imagenMujer.webp" alt="" data-aos="fade-right" data-aos-delay="250">
             </div>
         </section>
 
@@ -145,6 +148,13 @@
         <!-- FIN FOOTER-->
                 
     </div> <!--Fin container grid-->
+
+
+    <!--Scrip para que funciona libreria animaciones AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>
